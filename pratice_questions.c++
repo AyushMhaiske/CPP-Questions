@@ -460,12 +460,26 @@
 // }
 
 
+// wap to draw the pattern 
+// 1
+// 01
+// 010
+// 1010
+// 10101
+
 #include <iostream>
 using namespace std;
 
 int main(){
+    int n= 5;
+    bool val = true;
 
-    cout<<"hello world";
-
+    for (int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout<<val;
+            val =! val;
+        }
+        cout<<endl;
+    }
     return 0;
 }
