@@ -467,19 +467,76 @@
 // 1010
 // 10101
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main(){
-    int n= 5;
-    bool val = true;
+// int main(){
+//     int n= 5;
+//     bool val = true;
 
-    for (int i=1;i<=n;i++){
-        for(int j=1;j<=i;j++){
-            cout<<val;
-            val =! val;
-        }
-        cout<<endl;
-    }
-    return 0;
-}
+//     for (int i=1;i<=n;i++){
+//         for(int j=1;j<=i;j++){
+//             cout<<val;
+//             val =! val;
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+
+// wap to draw the pattern
+//     *****
+//    *****
+//   *****
+//  *****
+// *****
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int n= 5;
+//     for(int i=1;i<=n;i++){
+//         for(int j=n;j>=i;j--){
+//             cout<<" ";
+//         }
+//         for(int j=1;j<=n;j++){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+// wap to draw the pattern 
+//     1
+//    212
+//   32123
+//  4321234
+// 543212345
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int n=5;
+
+//     for(int i=1;i<=n;i++){
+//         // for spaces
+//         for(int j=n;j>=i+1;j--){
+//             cout<<" ";
+//         }
+
+//         // for backward umbers
+//         for(int j=i;j>=1;j--){
+//             cout<<j;
+//         }
+
+//         // for forward numbers
+//         for(int j=2;j<=i;j++){
+//             cout<<j;
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
