@@ -558,3 +558,78 @@
 //     return 0;
 // }
 
+// wap to write function with parameters
+// #include <iostream>
+// using namespace std;
+
+// int sum(int a,int b){
+//     int sum = a + b;
+//     return sum;
+// }
+
+// int diff(int a,int b){
+//     int diff = a-b;
+//     return diff;
+// }
+
+// int main(){
+//     int s = sum(2,4);
+//     int d = diff(4,2);
+//     cout<<"diff ="<<d<<endl;
+//     cout<<"sum ="<<s<<endl;
+//     return 0;
+// }
+
+// waf to calculate the product of 2 numbers
+
+// #include <iostream>
+// using namespace std;
+
+// int product(int a,int b){
+//     int product = a * b;
+//     return product;
+// }
+
+// int main(){
+//     int p = product(10,20);
+
+//     cout<<"product is ="<<p<<endl;
+//     return 0;
+// }
+
+// Wap to find the number is odd or even 
+// #include <iostream>
+// using namespace std;
+
+// int number(int a){
+//     int reminder = a%2;
+//     return reminder;
+// }
+
+// int main(){
+//     int r = number(13);
+//     if(r == 0){
+//         cout<<"the number is even number";
+//     }else{
+//         cout<<"the number is Odd number";
+//     }
+//     return 0;
+// }
+
+// wap to find factorial of a program
+#include <iostream>
+using namespace std;
+
+int fact(int a){
+    int factorial = 1;
+    for(int i=1;i<=a;i++){
+        factorial = factorial *i;
+    }
+    return factorial;
+}
+
+int main(){
+    int f = fact(6);
+    cout<<f<<endl;
+    return 0;
+}
