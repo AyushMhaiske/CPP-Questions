@@ -636,29 +636,70 @@
 
 
 // wap to find it the number is prime or not
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-bool prime(int a){
-    int number = a;
-    if(number == 1){
-        return false;
-    }
-    for(int i =2;i<=number-1;i++){
-        if(number % i == 0){
-            return false;
-        } else {
-            return true;
-        }
-    }
-}
+// bool prime(int a){
+//     int number = a;
+//     if(number == 1){
+//         return false;
+//     }
+//     for(int i =2;i<=number-1;i++){
+//         if(number % i == 0){
+//             return false;
+//         } else {
+//             return true;
+//         }
+//     }
+// }
 
-int main(){
-    bool isprime = prime(5);
-    if(isprime){
-        cout<<"the entered number is prime";
-    }else{
-        cout<<"the entered number is not prime";
-    }
-    return 0;
-}
+// int main(){
+//     bool isprime = prime(5);
+//     if(isprime){
+//         cout<<"the entered number is prime";
+//     }else{
+//         cout<<"the entered number is not prime";
+//     }
+//     return 0;
+// }
+
+// wap to find binomial cofficent 
+// #include <iostream>
+// using namespace std;
+
+// int fact(int n){
+//     int f = 1;
+//     for(int i=1;i<=n;i++){
+//         f = f * i;
+//     }
+//     return f;
+// }
+
+// int binomialcoff(int n, int r){
+//     int bino = fact(n)/(fact(r)*fact(n-r));
+//     return bino;
+// }
+
+
+// int main(){
+//     cout<<binomialcoff(4,2);
+//     return 0;
+// }
+
+// wap for function overloading 
+// #include <iostream>
+// using namespace std;
+
+// int sum(int a,int b){
+//     int sum = a + b;
+//     return sum;
+// }
+
+// double sum(double a,double b){
+//     double sum = a + b;
+//     return sum;
+// }
+// int main(){
+//     cout<<sum(1.5,3.6)<<endl;
+//     return 0;
+// }
