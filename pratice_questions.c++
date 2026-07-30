@@ -703,3 +703,31 @@
 //     cout<<sum(1.5,3.6)<<endl;
 //     return 0;
 // }
+
+
+// wap to write all the prime numbers from 2 to n 
+// #include <iostream>
+// using namespace std;
+
+// int is_prime(int n){
+//     for(int i =2;i*i<=n;i++){
+//         if(n%i== 0){
+//             return false;
+//         }else{
+//             return true;
+//         }
+//     }
+// }
+
+// void allprimes(int n){
+//     for(int i=2;i<=n;i++){
+//         if(is_prime(i)){
+//             cout<<i<<" ";
+//         }
+//     }
+//     cout<<endl;
+// }
+// int main(){
+//     allprimes(15);
+//     return 0;
+// }

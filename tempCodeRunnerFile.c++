@@ -1,1 +1,2 @@
-wap to draw the pattern
+
+        cout<<"the number is Odd number"
