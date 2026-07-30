@@ -617,19 +617,48 @@
 // }
 
 // wap to find factorial of a program
+// #include <iostream>
+// using namespace std;
+
+// int fact(int a){
+//     int factorial = 1;
+//     for(int i=1;i<=a;i++){
+//         factorial = factorial *i;
+//     }
+//     return factorial;
+// }
+
+// int main(){
+//     int f = fact(6);
+//     cout<<f<<endl;
+//     return 0;
+// }
+
+
+// wap to find it the number is prime or not
 #include <iostream>
 using namespace std;
 
-int fact(int a){
-    int factorial = 1;
-    for(int i=1;i<=a;i++){
-        factorial = factorial *i;
+bool prime(int a){
+    int number = a;
+    if(number == 1){
+        return false;
     }
-    return factorial;
+    for(int i =2;i<=number-1;i++){
+        if(number % i == 0){
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
 
 int main(){
-    int f = fact(6);
-    cout<<f<<endl;
+    bool isprime = prime(5);
+    if(isprime){
+        cout<<"the entered number is prime";
+    }else{
+        cout<<"the entered number is not prime";
+    }
     return 0;
 }
