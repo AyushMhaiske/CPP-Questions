@@ -731,3 +731,51 @@
 //     allprimes(15);
 //     return 0;
 // }
+
+// wap to find if the number is palindrome or not
+// #include <iostream>
+// using namespace std;
+
+// int palindrome(int n){
+//     int number = n;
+//     int dig1= n%10;
+//     n /= 10;
+//     int dig2= n%10;
+//     n/= 10;
+//     int dig3 = n;
+
+//     if(number == dig1*100+dig2*10+dig3){
+//         return true;
+//     }
+//     return false;
+// }
+
+// int main(){
+//     int p = palindrome(321);
+//     if(p){
+//         cout<<"the number is palindrome";
+//     }else{
+//         cout<<"the number is not a palindrome";
+//     }
+//     return 0;
+// }
+
+// wap a function to calculate the sum of digits of number
+// #include <iostream>
+// using namespace std;
+
+// int sum(int n){
+//     int sum = 0;
+//     for(int i=1;i<=5;i++){
+//         int dig = n%10;
+//         n /= 10;
+//         sum = sum + dig ;
+//     }
+//     return sum;
+// }
+
+// int main(){
+//     cout<<sum(789);
+//     return 0;
+// }
+
