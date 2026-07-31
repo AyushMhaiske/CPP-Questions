@@ -814,18 +814,18 @@
 // }
 
 // write a function to print the next character to entered character
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int character(char ch){
-//     if(ch == 'z'){
-//         return 'a';
-//     }
-//     return ch + 1;
-// }
+int character(char ch){
+    if(ch == 'z'){
+        return 'a';
+    }
+    return ch + 1;
+}
 
-// int main(){
-//     char ch = character('h');
-//     cout<<ch<<endl;
-//     return 0;
-// }
+int main(){
+    char ch = character('h');
+    cout<<ch<<endl;
+    return 0;
+}
