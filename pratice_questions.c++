@@ -779,3 +779,53 @@
 //     return 0;
 // }
 
+// Write a function which takes 2 numbers as parameters(a&b) and outputs: a^2+b^2+2*ab.
+// #include <iostream>
+// using namespace std;
+
+// int square(int a,int b){
+//     int sum = a*a+b*b+2*a*b;
+//     return sum;
+// }
+
+// int main(){ 
+//     cout<<square(1,5);
+//     return 0;
+// }
+
+
+// wap to find largest of three numbers
+// #include <iostream>
+// using namespace std;
+
+// int largest(int a,int b,int c){
+//     if(a>b && a>c){
+//         return a;
+//     }if(b>a && b>c){
+//         return b;
+//     }else{
+//         return c;
+//     }
+// }
+
+// int main(){
+//     cout<<largest(1,2,3);
+//     return 0;
+// }
+
+// write a function to print the next character to entered character
+// #include <iostream>
+// using namespace std;
+
+// int character(char ch){
+//     if(ch == 'z'){
+//         return 'a';
+//     }
+//     return ch + 1;
+// }
+
+// int main(){
+//     char ch = character('h');
+//     cout<<ch<<endl;
+//     return 0;
+// }
