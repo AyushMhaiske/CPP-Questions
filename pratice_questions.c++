@@ -864,24 +864,117 @@
 
 // wap to convert decimal to binary
 
+// #include <iostream>
+// using namespace std;
+
+// int decimal_to_binary(int decimal){
+//     int n = decimal;
+//     int binary = 0;
+//     int power = 1;
+
+//     while(n >0){
+//         int lastdig = n % 2;
+//         binary += lastdig * power;
+//         power = power * 10;
+//         n /= 2;
+//     }
+//     cout<<binary<<endl;
+// }
+
+// int main(){
+//     decimal_to_binary(10);
+//     return 0;
+// }
+
+
+// pointers
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 25;
+//     cout<<&a<<endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 25;
+//     int *ptr = &a;
+//     cout<<&a<<"="<<ptr<<endl;
+//     return 0;
+// }
+
+// to create a pptr for ptr
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 35;
+//     int *ptr = &a;
+//     int **pptr = &ptr;
+//     cout<<&ptr<<"="<<pptr;
+//     return 0;
+// }
+
+// derefraencing operator 
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 25;
+//     int *ptr = &a;
+//     cout<<ptr<<endl;
+//     cout<<*(&a)<<endl;
+//     return 0;
+// }
+
+// null pointer
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int *ptr = NULL;
+//     cout <<ptr<<endl;
+
+
+//     // the null pointer can not be derefenced 
+//     // cou<<*ptr<<endl; segmentation error
+//     return 0;
+// }
+
+
+// pass by value
+// #include <iostream>
+// using namespace std;
+
+// void value(int a){
+//     a= 20;
+//     cout<<a<<endl;
+// }
+
+// int main(){
+//     int a = 10;
+//     value(a);
+//     cout<<a<<endl;
+//     return 0;
+// }
+
+// pass by refrence(pointer)
 #include <iostream>
 using namespace std;
 
-int decimal_to_binary(int decimal){
-    int n = decimal;
-    int binary = 0;
-    int power = 1;
 
-    while(n >0){
-        int lastdig = n % 2;
-        binary += lastdig * power;
-        power = power * 10;
-        n /= 2;
-    }
-    cout<<binary<<endl;
+void value(int *ptr){
+    *ptr = 20;
+    cout<<*ptr<<endl;
 }
-
 int main(){
-    decimal_to_binary(10);
+    int a= 10;
+    value(&a);
+    cout<<a<<endl;
     return 0;
 }
