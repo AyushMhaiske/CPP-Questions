@@ -964,17 +964,46 @@
 // }
 
 // pass by refrence(pointer)
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
+// void value(int *ptr){
+//     *ptr = 20;
+//     cout<<*ptr<<endl;
+// }
+// int main(){
+//     int a= 10;
+//     value(&a);
+//     cout<<a<<endl;
+//     return 0;
+// }
 
-void value(int *ptr){
-    *ptr = 20;
-    cout<<*ptr<<endl;
-}
-int main(){
-    int a= 10;
-    value(&a);
-    cout<<a<<endl;
-    return 0;
-}
+// pass by refrence by refrence variabel
+// #include <iostream>
+// using namespace std;
+
+// void value(int &a){
+//     a = 25;
+//     cout<<a<<endl;
+// }
+
+// int main(){
+//     int a = 10; 
+//     value(a);
+//     cout<<a<<endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int x =5;
+//     int y = 10;
+//     int *ptr1 = &x;
+//     int *ptr2 = &y;
+
+//     ptr2 = ptr1;
+//     cout<<*ptr2<<endl;
+//     return 0;
+// }
