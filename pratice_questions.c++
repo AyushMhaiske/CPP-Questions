@@ -829,3 +829,59 @@
 //     cout<<ch<<endl;
 //     return 0;
 // }
+
+// wap to write the range of int 
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     cout<<sizeof(int)<<endl;
+// }
+
+// wap to convert the binary to deciaml
+// #include <iostream>
+// using namespace std;
+// void converttodec(int binnum){
+//     int m =  binnum;
+//     int n = 0;
+//     int power = 1;
+
+//     while (m >0){
+//         int lastdig = m % 10;
+//         n += lastdig * power;
+//         power = power *2;
+//         m = m/10;
+//     }
+
+//     cout<<n<<endl;
+// }
+
+// int main(){
+//     converttodec(1001);
+//     return 0;
+// }
+
+
+// wap to convert decimal to binary
+
+#include <iostream>
+using namespace std;
+
+int decimal_to_binary(int decimal){
+    int n = decimal;
+    int binary = 0;
+    int power = 1;
+
+    while(n >0){
+        int lastdig = n % 2;
+        binary += lastdig * power;
+        power = power * 10;
+        n /= 2;
+    }
+    cout<<binary<<endl;
+}
+
+int main(){
+    decimal_to_binary(10);
+    return 0;
+}
